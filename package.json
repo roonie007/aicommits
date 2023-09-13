@@ -24,10 +24,10 @@
 		"lint": "eslint --cache .",
 		"type-check": "tsc",
 		"test": "tsx tests",
-		"prepack": "pnpm build && clean-pkg-json"
+		"prepack": "yarn build && clean-pkg-json"
 	},
 	"simple-git-hooks": {
-		"pre-commit": "pnpm lint-staged"
+		"pre-commit": "yarn lint-staged"
 	},
 	"lint-staged": {
 		"*.ts": "eslint --cache"
